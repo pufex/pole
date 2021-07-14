@@ -14,9 +14,9 @@ function areaRectangle(firstSide, secondSide){
     return area;
 };
 
-var firstSide = 3; // Number(prompt("Wprowadź wartość pierwszego boku: "));
+var firstSide = Number(prompt("Wprowadź wartość pierwszego boku: "));
 if(firstSide && firstSide > 0){}else{firstSide = 0;};
-var secondSide = 4; // Number(prompt("Wprowadź wartość drugiego boku: "));
+var secondSide = Number(prompt("Wprowadź wartość drugiego boku: "));
 if(secondSide && secondSide > 0){}else{secondSide = 0;};
 
 
