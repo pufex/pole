@@ -5,8 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body, html{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            color: white;
+        }
+
+        .disclaimer{
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            padding: 1rem;
+            box-sizing: border-box;
+
+            margin: 0 auto;
+
+            font-size: 1.25rem;
+            font-family: sans-serif;
+            text-align: left;
+        }
+
+        .disclaimer__paragraph{
+            margin: 0 0 1rem 0;
+        }
+        
+        .disclaimer__list{
+            margin: 0 0 1rem 0;
+            padding-left: 1rem;
+            font-size: 1rem;
+        }
+
+        .disclaimer__list-element{
+            list-style-position: inside;
+            list-style-type: square;
+            margin: 0 0 1rem 0;
+        }
+
+        .disclaimer--red{
+            color: red;
+        }
+
+    </style>
 </head>
 <body>
+    <span class="disclaimer">
+        <p class="disclaimer__paragraph">
+            <span class="disclaimer--red">Uwaga!</span> Strona działa tylko w konsoli. Poniższa lista opisuje, co potrafi program i jak można z niego korzystać. Oto lista:
+        </p>
+        <ul class="disclaimer__list">
+            <li class="disclaimer__list-element">
+                Otrzymasz dwie następujące wiadomości, w którym możesz wprowadzisz dane. Zgodnie z tym co jest napisane w okienku, wprowadzasz wartość boku prostokąta. Następnie w konsoli zostaną wyświetlone boki prostokąta i jego pole na podstawie boków.
+            </li>
+            <li class="disclaimer__list-element">
+                Pole prostokąta liczone jest za pomocą funkcji 'areaRectangle()'. Przyjmuje ona dwa następujące argumenty: pierwszy bok prostokąta i drugi bok prostokąta. Następnie na podstawie tych dwóch argumentów oblicza pole. Ponadto dane zapisywane są do obiektu 'rectangle{}'.
+            </li>
+            <li class="disclaimer__list-element">
+                Wprowadzone do okienek dane przechodzą filtrację. Jeśli wprowadzona dana nie jest liczbą lub jest ujemna, to program przypisuje jej wartość 0. Ponadto, wprowadzone do funkcji 'areaRectangle()' boki również przechodzą filtrację. Jeśli któraś z liczb nie jest liczbą lub jest niezdefiniowana lub jest ujemna, to funkcja zwraca wartość 0. 
+            </li>
+        </ul>
+        <p class="disclaimer__paragraph">
+            Oczywiście z powodu tego, że program działa tylko w konsoli, to <span class="disclaimer--red">nie jest możliwa praca ze stroną na urządzeniu mobilnym.</span> 
+        </p>
+    </span>
     <script src=./script.js></script>
 </body>
 </html>
